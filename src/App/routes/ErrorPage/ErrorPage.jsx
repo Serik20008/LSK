@@ -1,5 +1,4 @@
-
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 // import importcss from 'importcss';
 // import { autobind } from 'core-decorators';
 // import { inject } from 'mobx-react';
@@ -30,11 +29,11 @@ import Header from '../../components/Header';
 export default class ErrorPage extends Component {
 
   render() {
-    const { type } = this.props;
+    const {type} = this.props;
     console.log(this.props);
     return (
       <div>
-        <Header siteTitle={this.props.siteTitle} />
+        <Header siteTitle={this.props.siteTitle}/>
         <Slide
           full
           video="http://skill-branch.ru/video-background.webm"
@@ -60,8 +59,8 @@ export default class ErrorPage extends Component {
                       href="/"
                       block
                     >
-                        Перейти на главную страницу
-                      </Button>
+                      Перейти на главную страницу
+                    </Button>
                   </CardBlock>
                 </Card>
               </Col>

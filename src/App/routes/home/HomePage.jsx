@@ -14,14 +14,17 @@ export default class HomePage extends Component {
         <Header siteTitle={this.props.siteTitle} />
         <Grid styleName="content">
           <Row>
+            <h1>Krutikov Sergey Vladimirovich</h1>
+          </Row>
+          <Row>
             <Col xs={12} md={4}>
               <Card>
                 <CardBlock>
                   <CardTitle>Категории</CardTitle>
                   <Nav bsStyle="pills" stacked activeKey={1}>
-                    <NavItem eventKey={1}>NavItem 1 content</NavItem>
-                    <NavItem eventKey={2}>NavItem 2 content</NavItem>
-                    <NavItem eventKey={3}>NavItem 3 content</NavItem>
+                    <NavItem eventKey={1}>Новости</NavItem>
+                    <NavItem eventKey={2}>Технологии</NavItem>
+                    <NavItem eventKey={3}>Заметки</NavItem>
                   </Nav>
                 </CardBlock>
               </Card>
@@ -30,8 +33,16 @@ export default class HomePage extends Component {
               <PostCard>
                 <PostCard.Head
                   id={1}
-                  name="Вася"
-                  surname="Пупкин"
+                  name="Сергей"
+                  surname="Онопко"
+                  date={new Date('2017-01-12')}
+                />
+              </PostCard>
+              <PostCard>
+                <PostCard.Head
+                  id={1}
+                  name="Виктория"
+                  surname="Калиниченко"
                   date={new Date('2017-01-12')}
                 />
               </PostCard>
