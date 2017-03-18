@@ -14,7 +14,7 @@ export default class HomePage extends Component {
         <Header siteTitle={this.props.siteTitle} />
         <Grid styleName="content">
           <Row>
-            <h1>Krutikov Sergey Vladimirovich</h1>
+            <h1 styleName="h1">Krutikov Sergey Vladimirovich</h1>
           </Row>
           <Row>
             <Col xs={12} md={4}>
